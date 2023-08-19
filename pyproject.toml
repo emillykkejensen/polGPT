@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "polgpt"
+version = "0.1.0"
+description = ""
+authors = ["emillykkejensen <elj@spelllabs.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.25.0"
+langchain = "^0.0.261"
+pinecone-client = "^2.2.2"
+openai = "^0.27.8"
+torch = {version = ">=2.0.0+cpu, !=2.0.1+cpu", source = "pytorch"}
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cpu"
+default = false
+secondary = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
