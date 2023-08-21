@@ -11,7 +11,10 @@ streamlit = "^1.25.0"
 langchain = "^0.0.261"
 pinecone-client = "^2.2.2"
 openai = "^0.27.8"
-torch = {version = ">=2.0.0+cpu, !=2.0.1+cpu", source = "pytorch"}
+torch = {version = ">=2.0.0, !=2.0.1", source = "pytorch"}
+torchvision = {version = ">=0.14.0+cpu", source = "pytorch"}
+sentence-transformers = "^2.2.2"
+tiktoken = "^0.4.0"
 
 [[tool.poetry.source]]
 name = "pytorch"
