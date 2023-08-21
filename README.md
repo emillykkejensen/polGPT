@@ -12,7 +12,9 @@ docker run -e PINECONE_API_KEY=xxxxxxxxx -e PINECONE_ENV=xxxxxxxxx -e PINECONE_I
 ```
 
 
-### 2. Clone the Repository
+### 2. or clone the Repository
+
+(All of it from bash)
 
 ```bash
 clone git@github.com:emillykkejensen/PolGPT.git
@@ -28,10 +30,10 @@ poetry update
 ```
 
 Set Pinecone API key, environment and index name:
-```python
-os.environ["PINECONE_API_KEY"] = "xxxxxxxxx"
-os.environ["PINECONE_ENV"] = "xxxxxxxxx"
-os.environ["PINECONE_INDEX"] = "xxxxxxxxx"
+```bash
+export PINECONE_API_KEY=xxxxxxxxx
+export PINECONE_ENV=us-xxxxxxxxx
+export PINECONE_INDEX=xxxxxxxxx
 ```
 
 and run streamlit:
