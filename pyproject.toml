@@ -19,8 +19,7 @@ tiktoken = "^0.4.0"
 [[tool.poetry.source]]
 name = "pytorch"
 url = "https://download.pytorch.org/whl/cpu"
-default = false
-secondary = false
+priority = "explicit"
 
 [build-system]
 requires = ["poetry-core"]
